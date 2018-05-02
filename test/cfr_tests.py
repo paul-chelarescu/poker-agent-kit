@@ -42,6 +42,6 @@ class CfrTests(unittest.TestCase):
             self.assertEqual(checkpoint_index, checkpoints_count)
             checkpoints_count += 1
 
-        cfr.train(60, 15, checkpoint_callback)
+        cfr.train(60, checkpoint_iterations=15, checkpoint_callback=checkpoint_callback)
 
         self.assertEqual(checkpoints_count, 4)
