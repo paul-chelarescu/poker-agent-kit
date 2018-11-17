@@ -6,7 +6,7 @@
 # iterations, usually smaller.
 
 if [ "$#" != 1 ]; then
-  echo 'Usage: ./play_against_random.sh {game_dir}'
+  echo 'Usage: ./play_against_weak.sh {game_dir}'
   exit 1
 fi
 
